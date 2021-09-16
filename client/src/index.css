@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans'),
+    url(./fonts/OpenSans/OpenSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans'),
+    url(./fonts/OpenSans/OpenSans-Italic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('OpenSans'),
+    url(./fonts/OpenSans/OpenSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Open Sans', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

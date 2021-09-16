@@ -1,0 +1,6 @@
+*.css
+*.svg
+
+.storybook/
+src/serviceWorker.ts
+src/config/serviceAccountKey.json

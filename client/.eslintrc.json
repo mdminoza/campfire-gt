@@ -1,0 +1,106 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "eslint-plugin-prettier"
+  ],
+  "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "eslint-comments/no-unlimited-disable": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-types": [
+      "off",
+      {
+        "types": {
+          "{}": {
+            "message": "Use object instead",
+            "fixWith": "object"
+          },
+          "Object": {
+            "message": "Use object instead",
+            "fixWith": "object"
+          }
+        }
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      { "extensions": [".tsx", ".ts", ".jsx", ".js"] }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true,
+        "printWidth": 80,
+        "useTabs": false
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "react/state-in-constructor": 0,
+    "react/require-default-props": 0,
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": 0,
+    "no-plusplus": "off",
+    "no-console": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
